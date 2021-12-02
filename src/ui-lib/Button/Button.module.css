@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 32px;
+    border-radius: 4px;
+    background: var(--color-primary-medium);
+  }
+  
+  .container:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .text {
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+    margin: 0;
+  }

@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .container > *:not(:last-child) {
+    margin-right: 48px;
+  }
+  
+  .pickerItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border: 2px solid var(--color-grey-light);
+    font-size: 48px;
+    line-height: 100%;
+  }
+  
+  .pickerItem:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .pickerItem.selected {
+    border-color: var(--color-primary-medium);
+  }
