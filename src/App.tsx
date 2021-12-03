@@ -8,6 +8,7 @@ import {
 import styles from "./App.module.css";
 import { Example } from "./pages/Example/Example";
 import { Home } from "./pages/Home/Home";
+import { Project } from "./pages/Project/Project"
 import { Divider } from "./ui-lib/Divider/Divider";
 import { Header } from "./ui-lib/Header/Header";
 import { DataProvider } from "./shared/DataProvider";
@@ -17,6 +18,7 @@ const title = "React Demo 2021";
 const routes = [
   { label: "🏠 Home", path: "/home", component: Home },
   { label: "🧪 Example", path: "/example", component: Example },
+  { label: "Project", path:"/project", component: Project}
 ];
 
 function App() {
