@@ -1,14 +1,14 @@
 import React from "react";
-import { Divider } from "../../ui-lib/Divider/Divider";
-import { Spacer } from "../../ui-lib/Spacer/Spacer";
-import { Status } from "./Status/Status";
-import { Name } from "./Name/Name";
-import { StatusForm } from "./StatusForm/StatusForm";
+// import { Divider } from "../../ui-lib/Divider/Divider";
+// import { Spacer } from "../../ui-lib/Spacer/Spacer";
+// import { Status } from "./Status/Status";
+// import { Name } from "./Name/Name";
+// import { StatusForm } from "./StatusForm/StatusForm";
 
 export const Example = () => {
   return (
     <>
-      <h1>Example</h1>
+      {/* <h1>Example</h1>
       <Spacer size={32} />
       <p>
         In this page, we are communicating with a GraphQL server, responsible
@@ -38,7 +38,7 @@ export const Example = () => {
       <Divider />
       <Spacer size={48} />
 
-      <StatusForm />
+      <StatusForm /> */}
     </>
   );
 };
