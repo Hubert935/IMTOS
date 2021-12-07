@@ -5,6 +5,7 @@ import { Spacer } from "../../ui-lib/Spacer/Spacer";
 import { Button } from "../../ui-lib/Button/Button";
 import { working, emotions } from "../../shared/types"
 import { set } from "lodash"
+import Chat from "./Chat";
 
 export const Project = () =>{
     const addTeamEvent = useAddTeamEvent();
@@ -56,6 +57,8 @@ export const Project = () =>{
           console.log(`event ${eventType.id} is now ${data}`);
         }}
       />
+      <Spacer size={32} />
+      <Chat/>
     </div>
     )
 }
