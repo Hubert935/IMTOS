@@ -1,7 +1,7 @@
 import { gql, useMutation, useQuery, useSubscription } from "@apollo/client";
-import { TeamEventMean, TeamState } from "./types";
+import { EventType, TeamEventMean, TeamState } from "./types";
 
-const TEAM_ID = "demoteam"; // Change this to your own team id
+const TEAM_ID = "grupp3"; // Change this to your own team id
 
 // Query example
 const teamEventMeanQuery = gql`
@@ -28,20 +28,22 @@ export const useTeamEventMean = () => {
 const addTeamEventMutation = gql`
   mutation AddTeamEvent($input: TeamEventInput) {
     addTeamEvent(input: $input) {
-      timestamp
+      data
     }
   }
 `;
+
 export const useAddTeamEvent = () => {
   const [addTeamEvent] =
-    useMutation<{ addTeamEvent: { timestamp: string } }>(addTeamEventMutation);
+    useMutation<{ addTeamEvent: { data: string } }>(addTeamEventMutation);
 
-  return (eventType: string) =>
+  return (eventType: EventType) =>
     addTeamEvent({
       variables: {
         input: {
           team: TEAM_ID,
-          type: eventType,
+          type: eventType.id,
+          data: eventType.data
         },
       },
     });
@@ -51,19 +53,17 @@ export const useAddTeamEvent = () => {
 const teamStateQuery = gql`
   query TeamState($team: String!) {
     teamState(team: $team) {
-      state {
-        value
-        key
-      }
+      key
+      value
     }
   }
 `;
 const teamStateSubscription = gql`
   subscription TeamStateChange($team: String!) {
     teamStateChange(team: $team) {
-      state {
-        value
+      state{
         key
+        value
       }
     }
   }

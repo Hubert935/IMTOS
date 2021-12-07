@@ -12,7 +12,7 @@ export const StatusForm = () => {
 
   return (
     <div className={styles.container}>
-      <h2>Send emotion to team</h2>
+      {/* <h2>Send emotion to team</h2>
       <Spacer size={32} />
       <EmojiPicker items={emotions} value={selected} onChange={setSelected} />
       <Spacer size={32} />
@@ -20,11 +20,10 @@ export const StatusForm = () => {
         label="Send!"
         onClick={async () => {
           const result = await addTeamEvent(selected);
-          const timestamp = result?.data?.addTeamEvent.timestamp;
-
+          const timestamp = result?.data?.addTeamEvent.data;
           console.log(`event ${selected} triggered at ${timestamp}`);
         }}
-      />
+      /> */}
     </div>
   );
 };
