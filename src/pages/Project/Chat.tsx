@@ -4,6 +4,7 @@ import styles from "./Chat.module.css"
 
 const Chat = () => {
     interface ToppersData {
+        key: number;
         msg: string;
         position: string;
     }
@@ -19,11 +20,11 @@ const Chat = () => {
         var arr: ToppersData[];
         arr = chatMessage;
         if(counter % 2){
-            arr.push({ msg: term, position: "right" })
+            arr.push({ key: counter, msg: term, position: "right" })
             var c = counter + 1;
             setCounter(c)
         }else{
-            arr.push({ msg: term, position: "left" })
+            arr.push({ key: counter, msg: term, position: "left" })
             var c = counter + 1;
             setCounter(c)
         }
@@ -32,15 +33,37 @@ const Chat = () => {
         setTerm("")
     }
 
+    const create = (message: string, pos: string) =>{
+        const tempPos = pos;
+
+        if(pos==="right"){
+            return (
+                <div style={{textAlign: "right"}}>
+                    <div>
+                    <p>{message}</p>
+                    </div>
+                </div>
+            )
+        }else{
+            return (
+                <div style={{textAlign: "left"}}>
+                    <div>
+                    <p>{message}</p>
+                    </div>
+                </div>
+            )
+        }
+    
+    }
+
     return (
-        <div className="container">
+        <div style={{width:"100%", textAlign:"center"}}>
+        <div style={{width:"75%"}}>
             <div >
                 
                     {chatMessage.map((chatMessage) => (
+                        create(chatMessage.msg, chatMessage.position)
                         
-                        <div style={{textAlign: "{{chatMessage.position}}"}}>
-                        <p >{chatMessage.msg}</p>
-                        </div>
                     ))}
                 
             </div>
@@ -56,8 +79,10 @@ const Chat = () => {
             </form>
 
         </div>
+        </div>
     )
 }
 
 export default Chat
+
 
