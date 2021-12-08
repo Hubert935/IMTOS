@@ -14,7 +14,7 @@
     flex-shrink: 0;
     width: var(--page-width);
     min-height: 100%;
-    background: var(--color-grey-dark);
+    background: var(--color-white);
   }
   
   .pageContent {
