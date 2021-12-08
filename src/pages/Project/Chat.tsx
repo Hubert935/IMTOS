@@ -77,7 +77,7 @@ const Chat = () => {
         <div style={{width:"100%", textAlign:"center", height:"25vh"}}>
         <div style={{width:"75%", marginLeft:"12%"}}>
             <div style={{width:"100%", 
-            height:"500px", overflow:"auto", background:"var(--color-grey-ultra-dark)",
+            height:"500px", overflow:"auto", background:"var(--color-grey-dark)",
              borderRadius:"20px", textAlign:"right"
             }} >    
                     <button style={{color:"#d4d4d4", marginRight:"13px", background:"#515960", 
