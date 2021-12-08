@@ -8,7 +8,7 @@ interface ButtonProps {
   onClick: () => void;
 }
 export const Button = (props: ButtonProps) => {
-  const { label, loading, width, onClick: _onClick } = props;
+  const { label, loading, width, onClick: _onClick} = props;
 
   const text = !loading ? label : `${label}...`;
   const style = width ? { width: `${width}px` } : undefined;

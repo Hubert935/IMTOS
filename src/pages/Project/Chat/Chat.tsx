@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import styles from "./Chat.module.css"
-import { Button } from '../../ui-lib/Button/Button';
+import { Button } from '../../../ui-lib/Button/Button';
 import { Console } from 'console';
 
 
@@ -49,10 +49,10 @@ const Chat = () => {
             return (
                 <>
                 <br/>
-                <div style={{textAlign: "right",  width:"100%"}}>
-                    <p style={{marginRight:"17px", fontSize:"12px", color:"#d4d4d4"}}>Anna</p>
-                    <div style={{background:"#596b78", width:"60%",  borderRadius:"10px", marginLeft:"37.5%"}}>
-                    <p style={{marginRight:"10px", color:"#ededed", opacity:"1"}}>{message}</p>
+                <div className={styles.messageRight}>
+                    <p className={styles.nameRight}>Anna</p>
+                    <div className={styles.bubbleRight}>
+                    <p className={styles.chattText}>{message}</p>
                     </div> 
                 </div>
                 </>
@@ -61,10 +61,10 @@ const Chat = () => {
             return (
                 <>
                 <br />
-                <div style={{textAlign: "left", width:"100%"}}>
-                     <p style={{marginLeft:"14px", fontSize:"12px", color:"#d4d4d4"}}>Pelle</p>
-                    <div style={{ background:"#515960", width:"60%",  borderRadius:"10px", marginLeft:"10px"}}>
-                        <p style={{marginLeft:"10px", color:"#ededed"}}>{message}</p>
+                <div className={styles.messageLeft}>
+                     <p className={styles.nameLeft}>Pelle</p>
+                    <div className={styles.bubbleLeft}>
+                        <p className={styles.chattText}>{message}</p>
                     </div>
                 </div>
                 </>
@@ -74,7 +74,7 @@ const Chat = () => {
     }
 
     return (
-        <div style={{width:"100%", textAlign:"center", height:"25vh"}}>
+        <div className={styles.container}>
         <div style={{width:"75%", marginLeft:"12%"}}>
             <div style={{width:"100%", 
             height:"500px", overflow:"auto", background:"var(--color-grey-dark)",
@@ -101,7 +101,7 @@ const Chat = () => {
                     value={term}
                     onChange={(e) => setTerm(e.target.value)}
                     type="text"
-                    placeholder="Type your message..."
+                    placeholder="Aa"
                     className="input"
                     style={{width:"80%", height:"2rem", padding:"5px", borderRadius:"12px", border:"none"}}
                     required
