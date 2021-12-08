@@ -1,5 +1,5 @@
 .container {
-    --page-width: 960px;
+    --page-width: 100%;
   
     display: flex;
     align-items: flex-start;
@@ -14,9 +14,9 @@
     flex-shrink: 0;
     width: var(--page-width);
     min-height: 100%;
-    background: var(--color-grey-dark);
+    background: var(--color-grey-ultra-dark);
   }
   
   .pageContent {
-    padding: 96px 120px;
+    padding: 10px 10px;
   }
