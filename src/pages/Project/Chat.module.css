@@ -1,8 +1,7 @@
-.chatbubble{
-    text-align: left;
+.chatbubble {
+  text-align: left;
 }
 
-.chatbubble:nth-child(even){
-    text-align: right;
-    
+.chatbubble:nth-child(even) {
+  text-align: right;
 }
