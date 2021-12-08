@@ -7,7 +7,7 @@ html {
   --color-green-light: #9FC68C;
   --color-pink-light: #F8A0A0;
   --color-yellow-light: #DFD07F;
-  --color-grey-light: #ecf0f1;
+  --color-grey-light: #ededed;
   --color-grey-medium: #bdc3c7;
   --color-grey-dark: #494848;
   --color-grey-ultra-dark: #3A3A3A;
@@ -25,7 +25,7 @@ body {
 body {
   background: var(--color-grey-ultra-dark);
   font-family: var(--font-family-base);
-  color: var(--color-grey-ultra-dark);
+  color: var(--color-grey-light);
 }
 
 p,
