@@ -1,5 +1,5 @@
 import React from 'react'
-import { Spacer } from "../../ui-lib/Spacer/Spacer";
+import { Spacer } from "../../../ui-lib/Spacer/Spacer";
 
 
 export const Workers = ()=>{

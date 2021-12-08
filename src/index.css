@@ -3,11 +3,13 @@ html {
   /* Colors */
   --color-white: #ffffff;
   --color-primary-medium: #7EBBE7;
-  --color-primary-dark: #16a085;
+  --color-primary-dark: #596b78;
+  --color-primary-ultra-dark: #515960;
   --color-green-light: #9FC68C;
   --color-pink-light: #F8A0A0;
   --color-yellow-light: #DFD07F;
-  --color-grey-light: #ededed;
+  --color-grey-ultra-light: #ededed;
+  --color-grey-light:#cecece;
   --color-grey-medium: #626262;
   --color-grey-dark: #494848;
   --color-grey-ultra-dark: #3A3A3A;
@@ -25,7 +27,7 @@ body {
 body {
   background: var(--color-grey-ultra-dark);
   font-family: var(--font-family-base);
-  color: var(--color-grey-light);
+  color: var(--color-grey-ultra-light);
 }
 
 p,
