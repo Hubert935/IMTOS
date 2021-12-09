@@ -27,12 +27,14 @@
   width:60%;
   border-radius: 12px;
   margin-left: 38.2%;
+  margin-bottom: 5px;
 }
 .bubbleLeft{
   background:var(--color-primary-ultra-dark);
   width:60%;
   border-radius: 12px;
   margin-left: 10px;
+  margin-bottom: 5px;
 }
 .chatText{
   margin: 0 5px 0 5px;
@@ -63,6 +65,9 @@
   cursor: pointer;
   opacity: 0.8;
 }
+.clearButton:active{
+  opacity: 0.6;
+}
 .textInput{
   width:81%;
   height: 2rem;
@@ -89,6 +94,9 @@
 .chatButton:hover{
   cursor: pointer;
   opacity: 0.8;
+}
+.cButton:active{
+  opacity: 0.6;
 }
 
 

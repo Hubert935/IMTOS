@@ -14,7 +14,9 @@
     cursor: pointer;
     opacity: 0.8;
   }
-  
+  .container:active{
+    opacity: 0.6;
+  }
   .text {
     color: var(--color-almost-black);
     font-size: 16px;

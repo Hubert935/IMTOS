@@ -1,7 +1,7 @@
 import { gql, useMutation, useQuery, useSubscription } from "@apollo/client";
 import { EventType, TeamEventMean, TeamState } from "./types";
 
-const TEAM_ID = "grupp3"; // Change this to your own team id
+const TEAM_ID = "team3"; // Change this to your own team id
 
 // Query example
 const teamEventMeanQuery = gql`
@@ -17,7 +17,7 @@ export const useTeamEventMean = () => {
     teamEventMeanQuery,
     {
       variables: { team: TEAM_ID },
-      pollInterval: 1000,
+      pollInterval: 10000,
     }
   );
 

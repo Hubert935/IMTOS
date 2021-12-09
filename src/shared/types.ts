@@ -23,6 +23,6 @@ export interface Emotion {
   ]
 
   export const emotions: EventType[] = [
-    { id: "emotion", data: "happy" },
-    { id: "emotion", data: "sad" },
+    { id: "emotion-1", data: "happy" },
+    { id: "emotion-2", data: "sad" },
   ];
