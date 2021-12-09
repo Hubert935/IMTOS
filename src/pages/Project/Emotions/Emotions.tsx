@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useAddTeamEvent, useTeamState } from "../../../shared/api";
+import React from "react";
+import { useAddTeamEvent } from "../../../shared/api";
 import { Spacer } from "../../../ui-lib/Spacer/Spacer";
 import { emotions } from "../../../shared/types"
 import { IconButton } from "../../../ui-lib/IconButton/IconButton";

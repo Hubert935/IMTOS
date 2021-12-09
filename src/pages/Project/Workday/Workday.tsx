@@ -1,5 +1,5 @@
 import React from "react";
-import { useAddTeamEvent, useTeamState } from "../../../shared/api";
+import { useAddTeamEvent } from "../../../shared/api";
 import { useState } from "react";
 
 import { Button } from "../../../ui-lib/Button/Button";
@@ -11,7 +11,7 @@ export const Workday = () => {
     const [eventType, setEventType] = useState(working[0]);
 
     const checkTrueOrFalse = () => {
-        if (eventType == working[0]) {
+        if (eventType === working[0]) {
             setEventType(working[1])
         } else {
             setEventType(working[0])

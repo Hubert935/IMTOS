@@ -2,16 +2,18 @@
     display:grid;
     grid-template-columns: 1fr 3fr 1fr;;
     grid-gap:10px;
-    height:100vh;
+    min-height:92vh;
 }
 .leftCol{
     background: var(--color-grey-dark);
     padding: 20px;
+    box-shadow: 5px 0px 12px -4px rgba(35,35,35,0.4);
     
 }
 .rightCol{
     background:var(--color-grey-dark);
     padding:20px;
+    box-shadow: -5px 0px 12px -4px rgba(35,35,35,0.4);
 }
 .lamp{
     width:40px;
