@@ -10,6 +10,7 @@ import { set } from "lodash"
 import Chat from "./Chat";
 import styles from "./Project.module.css"
 import { IconButton } from "../../ui-lib/IconButton/IconButton";
+import Slider from '@mui/material/Slider';
 
 export const Project = () => {
     const addTeamEvent = useAddTeamEvent();
@@ -99,6 +100,7 @@ export const Project = () => {
             <button onClick={generateJOD}>Hit me!</button>
             <p style={{color:"#ededed"}}>{joke}</p>
             </div>
+            
         </div>
     )
 }

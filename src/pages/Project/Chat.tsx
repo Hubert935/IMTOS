@@ -72,14 +72,19 @@ const Chat = () => {
         }
     
     }
+    function updateScroll(){
+        var element = document.getElementById("chatScroll")!;
+        element.scrollTop = element.scrollHeight;
+    }
 
     return (
         <div style={{width:"100%", textAlign:"center", height:"25vh"}}>
         <div style={{width:"75%", marginLeft:"12%"}}>
-            <div style={{width:"100%", 
+            <div id="chatScroll" style={{width:"100%", 
             height:"500px", overflow:"auto", background:"var(--color-grey-dark)",
              borderRadius:"20px", textAlign:"right"
-            }} >    
+            }} >  
+            {updateScroll}  
                     <button style={{color:"#d4d4d4", marginRight:"13px", background:"#515960", 
                         borderRadius:"13px", border:"none", marginTop:"13px", boxShadow:"0.1px 0.2px 0px 0px rgba(0,0,0,0.1)"
                     }}  onClick={clearArray}>
