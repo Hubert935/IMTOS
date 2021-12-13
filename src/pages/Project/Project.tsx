@@ -11,9 +11,11 @@ import _ from "lodash";
 import { Spacer } from "../../ui-lib/Spacer/Spacer";
 import { useState } from "react";
 import Help from "../Help/Help";
+import { useTeamState } from "../../shared/api";
 
 export const Project = () => {
     const [atWork, setAtWork] = useState(false);
+    const teamState = useTeamState();
 
     const setWorking = (working) => {
         if(working === false){
