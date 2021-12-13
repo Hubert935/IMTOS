@@ -6,15 +6,17 @@ import { Button } from "../../../ui-lib/Button/Button";
 import { working } from "../../../shared/types"
 import styles from "./Workday.module.css"
 
-export const Workday = () => {
+export const Workday = (props) => {
     const addTeamEvent = useAddTeamEvent();
     const [eventType, setEventType] = useState(working[0]);
-
+    const [work, setWork] = useState(false);
     const checkTrueOrFalse = () => {
         if (eventType === working[0]) {
             setEventType(working[1])
+            setWork(false)
         } else {
             setEventType(working[0])
+            setWork(true)
         }
     }
 
@@ -29,6 +31,7 @@ export const Workday = () => {
                     const data = result?.data?.addTeamEvent.data;
                     checkTrueOrFalse()
                     console.log(`event ${eventType.id} is now ${data}`);
+                    props.onBuy(work)
                 }}
             />
         </div>

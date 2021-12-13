@@ -6,23 +6,38 @@ import { Workday } from "./Workday/Workday";
 import { Emotions } from "./Emotions/Emotions";
 import { Joke } from "./Joke/Joke";
 import { SpacerDivider } from "../../ui-lib/Divider/SpacerDivider";
-import { OfficeMood } from "./OfficeMood/OfficeMood";
-import { DeskAllert } from "./DeskAllert/DeskAllert";
+import { OfficeMood } from "./OfficeMood/OfficeMood";    
+import _ from "lodash";
+import { Spacer } from "../../ui-lib/Spacer/Spacer";
+import { useState } from "react";
+import Help from "../Help/Help";
 
 export const Project = () => {
-    
+    const [atWork, setAtWork] = useState(false);
+
+    const setWorking = (working) => {
+        if(working === false){
+            setAtWork(false)
+        }else{
+            setAtWork(true)
+        }
+        console.log(working)
+    }
+
     return (
         <div className={styles.gridContainer}>
             <div className={styles.leftCol}>
-                <Workday/>
+                <Workday onBuy={setWorking}/>
                 <SpacerDivider/>
-                <Workers />
+                <Workers working={atWork}/>
             </div>
             <Chat/>
             <div className={styles.rightCol}>
                 <Emotions/>
                 <SpacerDivider/>
-                <DeskAllert/>
+                <h3>Your desk:</h3>
+                <Spacer size={16}/>
+                <Help motion={teamState?.state.find((s) => s.key === "motion")?.value}/>
                 <SpacerDivider/>
                 <OfficeMood/>
                 <SpacerDivider/>
