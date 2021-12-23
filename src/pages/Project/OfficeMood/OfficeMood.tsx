@@ -2,6 +2,8 @@ import _ from "lodash";
 import React, { useEffect} from "react";
 import { useTeamEventMean } from "../../../shared/api";
 import { Spacer } from "../../../ui-lib/Spacer/Spacer";
+import EmotionSlider from "./reactSlider";
+
 
 export const OfficeMood=()=>{
     const teamEventMean = useTeamEventMean();
