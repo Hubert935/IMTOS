@@ -39,6 +39,8 @@ export const Joke =()=>{
     }
 
     return(<>
+    <h3>Joke of the day:</h3>
+    <Spacer size={16}/>
     <div style={{display:"flex"}}>
     {/* <Button label={"1"} onClick={()=>{generateJOD("blonde")}}></Button> */}
     <Spacer size={16} />
