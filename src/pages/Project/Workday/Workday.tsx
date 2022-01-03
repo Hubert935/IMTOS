@@ -22,7 +22,7 @@ export const Workday = (props) => {
 
     return (<>
         <div style={{ display: "flex", flexDirection: "row" }}>
-            <div className={styles.lamp} style={(eventType === working[0]) ? { background: "var(--color-pink-light)" } : { background: "var(--color-green-light)" }} />
+            {/* <div className={styles.lamp} style={(eventType === working[0]) ? { background: "var(--color-pink-light)" } : { background: "var(--color-green-light)" }} /> */}
 
             <Button
                 label={(eventType === working[0]) ? "Begin Workday!" : "End Workday!"}

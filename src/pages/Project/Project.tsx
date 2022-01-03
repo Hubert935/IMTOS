@@ -37,7 +37,7 @@ export const Project = () => {
             <div className={styles.rightCol}>
                 <Emotions/>
                 <SpacerDivider/>
-                <h3>Your desk:</h3>
+                <h3>Notices:</h3>
                 <Spacer size={16}/>
                 <Help motion={teamState?.state.find((s) => s.key === "motion")?.value}/>
                 <SpacerDivider/>
