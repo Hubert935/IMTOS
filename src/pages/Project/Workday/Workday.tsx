@@ -4,7 +4,6 @@ import { useState } from "react";
 
 import { Button } from "../../../ui-lib/Button/Button";
 import { working } from "../../../shared/types"
-import styles from "./Workday.module.css"
 
 export const Workday = (props) => {
     const addTeamEvent = useAddTeamEvent();

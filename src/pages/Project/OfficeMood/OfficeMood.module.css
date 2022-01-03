@@ -1,0 +1,35 @@
+.icon{
+    width:45px;
+    height:45px;
+    margin: auto;
+}
+.p1{
+    font-size: 14px;
+}
+.container{
+    border-radius: 12px;
+    padding:12px;
+    padding-top: 23px;
+    padding-right: 23px;
+    margin-bottom: 10px;
+    background-color: var(--color-primary-ultra-dark);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+}
+#slide {
+    position: relative;
+    right: -400px;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes slide {
+    100% { right: 0; }
+}
+
+@keyframes slide {
+    100% { right: 0; }
+}

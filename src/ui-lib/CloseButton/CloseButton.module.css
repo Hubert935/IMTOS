@@ -1,0 +1,25 @@
+.button{ 
+    position: absolute;
+    right:5px;  
+    top:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:var(--color-primary-medium);
+    box-shadow: 5px 5px 12px -4px rgba(35,35,35,0.4);
+    margin: auto;
+}
+.button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}.button:active{
+    opacity: 0.6;
+}
+.emoji{
+    font-size: 15px;
+    margin: auto;
+    color: var(--color-grey-ultra-dark)
+}

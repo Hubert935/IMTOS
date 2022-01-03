@@ -7,7 +7,6 @@ import { Emotions } from "./Emotions/Emotions";
 import { Joke } from "./Joke/Joke";
 import { SpacerDivider } from "../../ui-lib/Divider/SpacerDivider";
 import { OfficeMood } from "./OfficeMood/OfficeMood";    
-import _ from "lodash";
 import { Spacer } from "../../ui-lib/Spacer/Spacer";
 import { useState } from "react";
 import Help from "../Help/Help";
@@ -40,7 +39,6 @@ export const Project = () => {
                 <h3>Notices:</h3>
                 <Spacer size={16}/>
                 <Help motion={teamState?.state.find((s) => s.key === "motion")?.value}/>
-                <SpacerDivider/>
                 <OfficeMood/>
                 <SpacerDivider/>
                 <Joke/>
