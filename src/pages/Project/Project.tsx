@@ -35,7 +35,7 @@ export const Project = () => {
             </div>
             <Chat/>
             <div className={styles.rightCol}>
-                <Emotions/>
+                <Emotions atWork={atWork}/>
                 <SpacerDivider/>
                 <h3>Your desk:</h3>
                 <Spacer size={16}/>
